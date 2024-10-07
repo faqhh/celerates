@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EaseMindly - Masuk Akun</title>
+
+    <!-- Mengimpor Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Mengimpor Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
+    <!-- Mengimpor Font Teachers dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Teachers&display=swap" rel="stylesheet" />
+
+    <!-- Mengimpor file CSS eksternal -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-200">
+    <header class="bg-yellow-500 p-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <img alt="EaseMindly Logo" class="mr-2" height="50"
+                src="https://storage.googleapis.com/a1aa/image/dMDosgO8A5LBBZDG8TnScJzEP5sUQGiFAW5fHgeb6AmP4qjTA.jpg"
+                width="50" />
+            <span class="text-2xl font-bold">EaseMindly</span>
+        </div>
+
+        <nav class="flex space-x-6 ml-auto mr-6">
+            <a class="text-black hover:text-blue-700" href="#">Ayo Chat AI</a>
+            <a class="text-black hover:text-blue-700" href="#">Mulai Meditasi</a>
+            <a class="text-black hover:text-blue-700" href="#">Putar Musikmu</a>
+            <a class="text-black hover:text-blue-700" href="#">Gabung Komunitas</a>
+            <a class="text-black hover:text-blue-700" href="#">Baca Artikel</a>
+        </nav>
+
+        <a class="bg-blue-950 text-white px-4 py-2 rounded hover:bg-blue-700 mr-6" href="login.html">Masuk</a>
+    </header>
+
+    <div class="flex flex-wrap">
+        <div class="w-full md:w-1/2 bg-white p-8">
+            <h1 class="flex flex-col items-center text-center text-3xl font-bold mb-2">Masuk Akun</h1>
+            <p class="flex flex-col items-center text-center text-gray-400 mb-6">Selamat datang kembali!</p>
+            <form id="loginForm">
+                <div class="mb-4">
+                    <label class="block text-gray-700">Email</label>
+                    <input class="w-full p-2 border rounded bg-gray-300" placeholder="Masukan email anda" type="email" required />
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Kata Sandi</label>
+                    <div class="relative">
+                        <input class="w-full p-2 border rounded bg-gray-300" id="loginPassword" placeholder="Masukan kata sandi anda" type="password" required />
+                        <i class="fas fa-eye absolute right-3 top-3 text-gray-500 cursor-pointer" id="toggleLoginPassword"></i>
+                    </div>
+                </div>
+                <button class="w-full bg-yellow-500 text-white p-2 rounded hover:bg-yellow-600" type="submit">Masuk</button>
+            </form>
+
+            <div class="mt-6 text-center">
+                <p class="text-gray-400 mb-4">Belum punya akun? <a class="text-yellow-500" href="regist.html">Daftar Sekarang</a></p>
+            </div>
+        </div>
+
+        <div class="w-full md:w-1/2 relative">
+            <img alt="Sunset with a bridge over water" class="w-full h-full object-cover" src="https://storage.googleapis.com/a1aa/image/XgdfPW6n2T0kMinF03MXSKe7qjgdhegCcdZ8mw5Cpfw4grOOB.jpg" />
+            <div class="absolute bottom-4 left-4 bg-pink-500 text-white p-2 rounded-full">C</div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+                <p class="text-4xl">if lost, please return to</p>
+                <p class="text-4xl font-bold">the EaseMindly.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mengimpor file JavaScript eksternal -->
+    <script src="login.js"></script>
+</body>
+
+</html>

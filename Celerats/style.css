@@ -1,0 +1,125 @@
+/* Mengatur font dan membuat semua teks menjadi bold */
+body {
+    font-family: 'Teachers', sans-serif;
+    font-weight: bold;
+    background: url('https://storage.googleapis.com/a1aa/image/YOUR_BACKGROUND_IMAGE.jpg') no-repeat center center fixed; /* Ganti dengan URL gambar latar belakang Anda */
+    background-size: cover; /* Menyesuaikan ukuran gambar latar belakang */
+}
+
+/* Mengatur teks di tengah */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Tinggi penuh layar */
+    text-align: center; /* Teks di tengah */
+}
+
+/* Tambahkan gaya untuk input chat */
+.chat-input {
+    margin-top: 20px;
+    width: 100%; /* Atur lebar input sesuai kebutuhan */
+}
+
+/* Membuat header menjadi sticky */
+header {
+    position: sticky;
+    top: 0; /* Menetapkan posisi header tetap di atas */
+    z-index: 999; /* Supaya header tetap di atas elemen lainnya */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Tambahkan sedikit bayangan untuk efek */
+    background-color: var(--primary-color); /* Memastikan background tetap terlihat */
+}
+
+/* Mengatur warna latar belakang input form menjadi abu-abu */
+input {
+    background-color: #e0e0e0; /* Anda bisa memilih warna abu-abu sesuai preferensi */
+}
+
+/* Atur font di navbar menjadi semibold dengan ukuran 16px */
+nav a {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* Tambahkan efek hover untuk tautan */
+nav a:hover {
+    color: #1D4ED8;
+}
+
+/* Tambahkan efek hover untuk tombol masuk */
+a.bg-blue-950:hover {
+    background-color: #1E40AF;
+}
+
+/* Tambahkan efek hover untuk tombol daftar */
+button:hover {
+    background-color: #D97706;
+}
+
+/* Responsif untuk form daftar */
+@media (max-width: 768px) {
+    .flex-wrap {
+        flex-direction: column;
+    }
+
+    .w-full {
+        width: 100%;
+    }
+}
+
+/* Gaya untuk chat container */
+#chat {
+    background-color: #f9f9f9; /* Warna latar belakang chat box */
+    border: 1px solid #ccc; /* Garis border */
+    border-radius: 8px; /* Sudut melengkung */
+    padding: 10px; /* Ruang di dalam */
+    max-height: 400px; /* Tinggi maksimal untuk chat */
+    overflow-y: auto; /* Scroll vertikal jika konten melebihi batas */
+}
+
+/* Gaya untuk pesan pengguna */
+.text-right {
+    text-align: right; /* Pesan pengguna di sebelah kanan */
+    color: #1D4ED8; /* Warna pesan pengguna */
+}
+
+/* Gaya untuk pesan AI */
+.text-left {
+    text-align: left; /* Pesan AI di sebelah kiri */
+    color: #4A5568; /* Warna pesan AI */
+}
+
+/* Gaya untuk footer */
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center; /* Teks di tengah footer */
+    background-color: #ffcc00; /* Warna footer */
+    padding: 10px 0; /* Ruang dalam footer */
+}
+
+/* Gelombang di bagian bawah gambar */
+.wavy {
+    height: 100px; /* Tinggi gelombang */
+    background: #ffcc00; /* Warna gelombang */
+    display: flex; /* Menyusun isi dalam flexbox */
+    align-items: center; /* Pusatkan secara vertikal */
+    justify-content: center; /* Pusatkan secara horizontal */
+    text-align: center; /* Teks di tengah */
+    color: white; /* Warna teks putih */
+}
+
+.meditation-info {
+    z-index: 1; /* Pastikan isi di atas gelombang */
+}
+
+/* Gaya untuk judul dan teks */
+.meditation-info h2 {
+    margin-bottom: 5px; /* Ruang bawah untuk judul */
+}
+
+.meditation-info p {
+    margin: 0; /* Hilangkan margin pada paragraf */
+}
